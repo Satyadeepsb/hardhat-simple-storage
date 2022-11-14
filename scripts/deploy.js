@@ -9,7 +9,7 @@ async function main() {
   const simpleStorage = await SimpleStorageFactory.deploy()
   await simpleStorage.deployed()
   console.log(`Deployed contract to ${simpleStorage.address}`)
-  console.log(network.config)
+  // console.log(network.config)
 
   // Verifying Contract
   if (network.config.chainId === 5 && process.env.ETHER_SCAN_API_KEY) {
