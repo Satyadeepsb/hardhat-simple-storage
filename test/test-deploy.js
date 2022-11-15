@@ -31,4 +31,18 @@ describe("SimpleStorage", function () {
     // expect
     expect(currentValue.toString()).to.equal(expectedValue)
   })
+
+  it("Should add Person when we call addPerson", async function () {
+    const expectedPersons = 1
+    const transactionResponse = await simpleStorage.addPerson(
+      "Satyadeep",
+      expectedPersons
+    )
+    await transactionResponse.wait(1)
+    const currentPersons = await simpleStorage.retrievePersonCount()
+    // assert
+    // assert.equal(currentValue.toString(), expectedValue)
+    // expect
+    expect(currentPersons.toString()).to.equal(expectedPersons.toString())
+  })
 })
