@@ -17,8 +17,6 @@
 - [Linting](#linting)
 - [Thank you!](#thank-you)
 
-This project is apart of the Hardhat FreeCodeCamp video.
-
 # Getting Started
 
 ## Requirements
